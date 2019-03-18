@@ -77,7 +77,7 @@ def new_movie(title, mpaarating, director):
         movie = Movie(title=title, director_id=director.id,mpaa_rating=mpaarating)
         session.add(movie)
         session.commit()
-        return "New movie: {} by {}. Check out the URL for ALL songs to see the whole list.".format(movie.title, director.name)
+        return "New movie: {} by {}.".format(movie.title, director.name)
 
 
 @app.route('/all_movies')
