@@ -1,0 +1,9 @@
+<ul>
+{% for m in all_movies %}
+<li>{{ m[0] }} by {{ m[1] }} - {{ m[2] }}</li><br>
+{% endfor %}
+</ul>
+
+{% if not all_movies %}
+There is nothing to show.
+{% endif %}
